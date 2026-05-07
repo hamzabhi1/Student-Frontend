@@ -42,7 +42,7 @@ const useSubmit = ({ isAuth = false } = {}) => {
           fetchOptions.body = isFormData ? body : JSON.stringify(body);
         }
 
-        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:4000';
+        const apiUrl = import.meta.env.VITE_API_URL || 'https://student-backend-fxbfeqy4e-hamzabhi1s-projects.vercel.app';
         const res = await fetch(
           `${apiUrl}/api/auth${endpoint}`,
           fetchOptions,

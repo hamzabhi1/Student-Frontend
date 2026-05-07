@@ -14,7 +14,7 @@ const StudentForm = ({ onSubmit, loading, initialData, onCancel }) => {
     );
     const [profilePicture, setProfilePicture] = useState(null);
     const [previewUrl, setPreviewUrl] = useState(
-        initialData?.profilePicture ? `http://localhost:4000/uploads/${initialData.profilePicture}` : null
+        initialData?.profilePicture ? `https://student-backend-fxbfeqy4e-hamzabhi1s-projects.vercel.app/uploads/${initialData.profilePicture}` : null
     );
 
     const handleChange = (e) => {
