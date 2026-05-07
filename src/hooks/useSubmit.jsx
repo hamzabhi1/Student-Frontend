@@ -42,8 +42,9 @@ const useSubmit = ({ isAuth = false } = {}) => {
           fetchOptions.body = isFormData ? body : JSON.stringify(body);
         }
 
+        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:4000';
         const res = await fetch(
-          `http://localhost:4000/api/auth${endpoint}`,
+          `${apiUrl}/api/auth${endpoint}`,
           fetchOptions,
         );
 

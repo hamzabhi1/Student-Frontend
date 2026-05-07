@@ -23,7 +23,8 @@ const useFetch = (endpoint, { isAuth = false, immediate = true } = {}) => {
           headers["Authorization"] = `Bearer ${token}`;
         }
 
-        const res = await fetch(`http://localhost:4000${url}`, {
+        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:4000';
+        const res = await fetch(`${apiUrl}${url}`, {
           method: "GET",
           headers,
           credentials: "include",
