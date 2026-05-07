@@ -88,7 +88,7 @@ const HomePage = () => {
         <div className="profile-avatar">
           {activeUser?.profilePicture ? (
             <img 
-              src={`http://localhost:4000/uploads/${activeUser.profilePicture}`} 
+              src={`https://student-backend-fxbfeqy4e-hamzabhi1s-projects.vercel.app/uploads/${activeUser.profilePicture}`} 
               alt={activeUser?.fullName}
               style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover' }}
             />
@@ -154,7 +154,7 @@ const HomePage = () => {
                         <div className="student-avatar">
                           {student.profilePicture ? (
                             <img 
-                              src={`http://localhost:4000/uploads/${student.profilePicture}`}
+                              src={`https://student-backend-fxbfeqy4e-hamzabhi1s-projects.vercel.app/uploads/${student.profilePicture}`}
                               alt={student.fullName}
                             />
                           ) : (
