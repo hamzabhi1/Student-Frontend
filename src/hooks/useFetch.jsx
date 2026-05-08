@@ -23,7 +23,7 @@ const useFetch = (endpoint, { isAuth = false, immediate = true } = {}) => {
           headers["Authorization"] = `Bearer ${token}`;
         }
 
-        const apiUrl = import.meta.env.VITE_API_URL || 'https://student-backend-ll1dei3pf-hamzabhi1s-projects.vercel.app';
+        const apiUrl = import.meta.env.VITE_API_URL || 'https://student-backend-n8uc3a4f0-hamzabhi1s-projects.vercel.app';
         const res = await fetch(`${apiUrl}${url}`, {
           method: "GET",
           headers,
