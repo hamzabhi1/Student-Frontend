@@ -13,7 +13,7 @@ const StudentForm = ({ onSubmit, loading, initialData, onCancel }) => {
         }
     );
     const [profilePicture, setProfilePicture] = useState(null);
-    const defaultBackend = import.meta.env.VITE_API_URL || 'https://student-backend-n8uc3a4f0-hamzabhi1s-projects.vercel.app';
+    const defaultBackend = import.meta.env.VITE_API_URL || 'https://student-backend-rho.vercel.app';
     const [previewUrl, setPreviewUrl] = useState(
         initialData?.profilePicture ? `${defaultBackend}/uploads/${initialData.profilePicture}` : null
     );
