@@ -106,3 +106,9 @@
         transform: translateY(0);
     }
 }
+
+@media (max-width: 420px) {
+  .auth-card { padding: 14px; border-radius: 16px; }
+  .auth-title { font-size: 1.4rem; }
+  .auth-form { gap: 10px; }
+}

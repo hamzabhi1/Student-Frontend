@@ -5,6 +5,10 @@
   --ink-soft: #386274;
   --accent: #ffd166;
   --surface: rgba(255, 255, 255, 0.72);
+  --container-max: 1200px;
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --gap: 16px;
 }
 
 * {
@@ -20,6 +24,24 @@ body {
     radial-gradient(circle at 12% 18%, rgba(255, 209, 102, 0.52), transparent 35%),
     radial-gradient(circle at 88% 16%, rgba(0, 180, 216, 0.42), transparent 30%),
     linear-gradient(140deg, #ecfeff 0%, #cae9ff 42%, #c6fced 100%);
+}
+
+/* Responsive typography and container */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  html { font-size: 15px; }
+}
+
+@media (max-width: 600px) {
+  html { font-size: 14px; }
+}
+
+.container {
+  width: min(var(--container-max), 94%);
+  margin: 0 auto;
 }
 
 #root {

@@ -192,3 +192,9 @@
         width: 100%;
     }
 }
+
+@media (max-width: 480px) {
+    .preview-image { max-width: 96px; max-height: 96px; }
+    .student-form { padding: 14px; gap: 12px; }
+    .form-actions { gap: 8px; }
+}

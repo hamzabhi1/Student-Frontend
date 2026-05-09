@@ -21,6 +21,12 @@
 }
 
 .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand {
     text-decoration: none;
     color: var(--ink);
     font-size: clamp(1.1rem, 2.6vw, 1.45rem);
@@ -41,6 +47,13 @@
     border-radius: 12px;
     font-weight: 600;
     transition: all 0.25s ease;
+}
+
+/* Make touch targets slightly larger on small screens */
+@media (max-width: 480px) {
+    .nav-link { padding: 12px 10px; font-size: 0.95rem; }
+    .brand { font-size: 1.05rem; }
+    .navbar { padding: 12px clamp(10px, 4vw, 18px); }
 }
 
 .nav-button {
@@ -77,4 +90,9 @@
         font-size: 0.9rem;
         padding: 9px 12px;
     }
+}
+
+/* Slightly elevate the navbar on touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .navbar { box-shadow: 0 8px 20px rgba(4,39,54,0.12); }
 }

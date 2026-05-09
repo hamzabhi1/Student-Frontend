@@ -179,6 +179,25 @@
         text-align: left;
     }
 
+    .profile-avatar {
+        width: 84px;
+        height: 84px;
+        font-size: 1.4rem;
+    }
+
+    .profile-intro h1 {
+        font-size: 1.45rem;
+    }
+
+    .profile-stats {
+        gap: 10px;
+    }
+
+
+/* Make stat cards slightly more compact on medium screens */
+@media (max-width: 900px) {
+    .stat-card p { font-size: 1.35rem; }
+}
     .profile-stats {
         grid-template-columns: 1fr;
     }
